@@ -1,0 +1,29 @@
+.SearchForm {
+    width: 960px;
+    height: 56px;
+    background-color: dimgrey;
+    margin: auto;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 168px 96px 168px;
+    overflow: hidden;
+
+}
+
+
+.SearchButton {
+    font-size: 18px;
+    background-color: #00AFF5;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    height: 100%;
+    border-radius: 0;
+    transition: font-size 0.2s
+}
+
+.SearchButton:hover {
+    font-size: 17px;
+    transition: 0.2s;
+
+}

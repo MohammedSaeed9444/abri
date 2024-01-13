@@ -1,0 +1,20 @@
+.listA {
+    display: flex;
+    
+}
+
+.listA li {
+    list-style-type: none;
+    margin-left: 16px;
+}
+
+.listA a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00b0f593;
+}
+
+.listA a:hover {
+    color: #11779f93;
+}

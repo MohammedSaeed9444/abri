@@ -1,0 +1,25 @@
+.Navbar {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+}
+
+.NavbarMobile {
+    display: none;
+}
+
+@media (max-width: 620px) {
+    .Navbar {
+        display: none;
+    }
+    .NavbarMobile {
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 12px;
+    }
+
+}

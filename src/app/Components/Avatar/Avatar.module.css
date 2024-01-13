@@ -1,0 +1,17 @@
+.Avatar {
+    width: 48px;
+    height: 48px;
+    background-color: bisque;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 620px) {
+    .Avatar {
+        width: 28px;
+        height: 28px;
+    }
+
+}

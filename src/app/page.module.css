@@ -1,0 +1,15 @@
+
+
+
+
+.coverImg {
+  height: 272px;
+}
+
+
+.img {
+  height: 272px;
+  width: 100%;
+  object-fit: cover;
+}
+
