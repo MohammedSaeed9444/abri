@@ -1,7 +1,6 @@
 
 import Container from './Components/Container/container'
 import Navbar from './Components/Navbar/Navbar'
-import PassengerSelector from './Components/PassengerSelector/PassengerSelector'
 import SearchForm from './Components/SearchForm/SearchForm'
 import styles from './page.module.css'
 

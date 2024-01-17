@@ -1,6 +1,21 @@
 .PassengerSelector {
-    width: 100%;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    padding: 0 8px;
+    background-color: #FFFFFF;
+ 
+
 }
 
+.PassengerSelector button {
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    font-size: large;
+}
 
+.PassengerInput {
+    border: none;
+    outline: none;
+    padding-left: 6px;
+}
