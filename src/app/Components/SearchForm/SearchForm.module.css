@@ -7,7 +7,8 @@
     grid-template-columns: 1fr 1fr 168px 96px 168px;
     overflow: hidden;
     font-size: 18px;
-
+    /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -26,4 +27,14 @@
     outline: none;
     color: #FFFFFF;
     height: 100%;
+}
+
+
+@media (max-width: 620px) {
+    .SearchForm {
+        width: auto;
+        grid-template-columns: 1fr;
+        height: auto; 
+      }
+
 }

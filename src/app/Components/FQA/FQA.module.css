@@ -1,0 +1,27 @@
+
+
+.TitleFQA {
+    padding-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #054652;
+}
+
+.ulFQA {
+    padding-top: 42px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    text-align:start;
+}
+
+.ulFQA h4 {
+    padding-bottom: 16px;
+    color: #054652;
+}
+
+.ulFQA p{
+    color: #6f8b90;
+}

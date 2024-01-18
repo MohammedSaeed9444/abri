@@ -114,7 +114,7 @@ const SearchForm = () => {
       date: dateString,
     }));
   };
-  }
+  
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -144,7 +144,7 @@ const SearchForm = () => {
         selectedDate={formData.date}
         onDateChange={handleDateChange}
       /> */}
-      <DatePicker onChange={onChange} />
+      <DatePicker onChange={onChange} format={"MMM DD"} />
       <PassengerSelector
         className={styles.PassengerSelector}
         passengerCount={formData.passenger}

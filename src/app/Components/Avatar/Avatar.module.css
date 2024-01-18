@@ -1,3 +1,5 @@
+/* Avatar.module.css */
+
 .Avatar {
     width: 48px;
     height: 48px;
@@ -6,12 +8,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width: 620px) {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .Menu {
+    position: absolute;
+    top: 60px; /* Adjust the top value as needed */
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+    z-index: 1;
+  }
+  
+  .MenuList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .MenuList li {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .MenuList li:last-child {
+    border-bottom: none;
+  }
+  
+  .MenuList a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .MenuList a:hover {
+    color: #007bff;
+  }
+  
+  @media (max-width: 620px) {
     .Avatar {
-        width: 28px;
-        height: 28px;
+      width: 28px;
+      height: 28px;
     }
-
-}
+  
+    .Menu {
+      top: 38px; /* Adjust the top value as needed */
+    }
+  }
+  

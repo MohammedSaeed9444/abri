@@ -1,0 +1,46 @@
+.Section {
+    background-color: #054652;
+    padding: 38px 10px;
+}
+
+.TitelSection {
+    padding-bottom: 20px;
+}
+
+
+.UlPapulerTrip {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.UlPapulerTrip li{
+    border-radius: 10px;
+    height: 85px;
+    background-color: #ffffff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.UlPapulerTrip li:hover {
+    background-color: #8488883b;
+    transition: 0.3s;
+}
+
+.UlPapulerTrip a{
+    text-decoration: none;
+    font-size: large;
+    color: #054652;
+    font-weight: bold;
+}
+
+
+@media (max-width: 620px) {
+    .UlPapulerTrip {
+        grid-template-columns: 1fr;
+      }
+
+}

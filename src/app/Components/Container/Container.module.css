@@ -3,5 +3,16 @@
     max-width: 1024px;
     margin: auto;
     padding: 0 24px;
-    background-color: rgb(255, 216, 178);
+    /* background-color: rgb(255, 216, 178); */
+}
+
+
+@media (max-width: 620px) {
+    .Container {
+        width: auto;
+        max-width: 620px;
+        padding: 0 10px;
+
+    }
+
 }

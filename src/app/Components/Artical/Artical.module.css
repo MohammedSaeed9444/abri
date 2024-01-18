@@ -1,0 +1,61 @@
+.Artical {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.ArticalDiv {
+    padding-top: 12px;
+    padding-bottom: 6px;
+}
+
+
+.ContainerImg {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 340px;
+
+}
+
+.ContainerImg img {
+    width: 100%;
+    height: 100%; /* You can adjust this height based on your design */
+    object-fit: cover; /* This property ensures the image maintains its aspect ratio */
+}
+
+.ArticleImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.TitelArtical {
+    padding-top: 12px;
+}
+
+.PergraphArtical {
+    padding-top: 8px;
+}
+
+.LinkArtical {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00b0f593;
+}
+
+.LinkArtical:hover {
+    color: #11779f93;
+}
+
+@media (max-width: 620px) {
+
+    .Artical {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .ContainerImg {
+        height: auto;
+    
+    }
+}
