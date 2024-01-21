@@ -1,6 +1,7 @@
 "use client"
 import styles from './Avatar.module.css';
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 export default function Avatar() {
 
@@ -15,9 +16,9 @@ export default function Avatar() {
     {isMenuOpen && (
         <div className={styles.Menu}>
           <ul className={styles.MenuList}>
-            <li><a>Setting</a></li>
-            <li><a>Log in</a></li>
-            <li><a>Sing up</a></li>
+            <li><Link href={'/'}>Setting</Link></li>
+            <li><Link href={'/'}>Log in</Link></li>
+            <li><Link href="/SignUp">Sing up</Link></li>
           </ul>
         </div>
       )}

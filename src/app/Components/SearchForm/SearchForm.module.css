@@ -1,4 +1,4 @@
-.SearchForm {
+/* .SearchForm {
     width: 960px;
     height: 56px;
     margin: auto;
@@ -8,7 +8,7 @@
     overflow: hidden;
     font-size: 18px;
     /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -17,8 +17,61 @@
     /* border: none;
     outline: none;
     border-right: 1px solid #ccc; */
+/* }  */
+
+
+/* .SearchButton {
+    font-size: 18px;
+    background-color: #00AFF5;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    height: 100%;
 }
 
+
+@media (max-width: 620px) {
+    .SearchForm {
+        width: auto;
+        grid-template-columns: 1fr;
+        height: auto; 
+      }
+
+}  */
+
+
+.SearchForm {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 168px 96px 168px;
+    max-width: 960px;
+    height: 56px;
+    margin: auto;
+    overflow: hidden;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    margin-top: -28px;
+}
+
+
+.numberPassengersContainer {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+
+}
+
+.InputNum {
+    border: none;
+    outline: none;
+    font-size: large;
+}
 
 .SearchButton {
     font-size: 18px;

@@ -1,45 +1,68 @@
+.Titel{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    color: #054652;
+}
+
 .Ticket {
     background-color: #ffffff;
     border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     max-width: 640px;
     margin: auto;
-    margin-top: 32px;
-    padding: 16px;
-    color: #054652;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; */
+    padding: 24px;
+    color: #054752b7;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.4s ease;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 72px;
 }
 
-.Ticket:hover {
-    background-color: #00AFF5;
-    color: #ffffff;
-    transform: translateY(-10px);
-    transition: transform 0.3s ease;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); 
-}
-
-.ContainerTicket {
-    margin-top: 132px;
-}
-
-.From {
+.From,
+.To,
+.ContPrice,
+.typeCar {
     display: flex;
-    padding-bottom: 8px;
+    padding: 18px;
+    border-bottom: 1px solid #cccccc92;
 }
 
-.To {
-    display: flex;
+.ContPrice {
+    justify-content: space-between;
 }
+
 
 .TimeFrom {
-    padding-right: 10px;
+    padding-right: 24px;
+
 }
 
 .TimeTo {
-    padding-right: 10px;
+    padding-right: 24px;
 }
+
+
+.ContBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.BookButton {
+    font-size: 18px;
+    background-color: #00AFF5;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    height: 46px;
+    width: 102px;
+    border-radius: 26px;
+}
+
+

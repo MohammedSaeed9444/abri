@@ -1,0 +1,117 @@
+.Form {
+    max-width: 640px;
+    margin: auto;
+    padding: 0 32px;
+  }
+
+
+  .ContainerInput {
+    padding-bottom: 20px;
+  }
+
+  .Label {
+    padding-left: 4px;
+  }
+  .Input {
+    width: 100%;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-left: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+  }
+
+
+  .Input:focus {
+    outline: none;
+    border-color: #00AFF5;
+    box-shadow: 0 0 5px rgba(0, 175, 245, 0.7); 
+  }
+
+  .InputB {
+    width: 92%;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-left: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .InputB:focus {
+    outline: none;
+    border-color: #00AFF5;
+    box-shadow: 0 0 5px rgba(0, 175, 245, 0.7); 
+  }
+
+  .ContainerBirthday {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+
+  .SubmitButton {
+    background-color: #00AFF5;
+    border-radius: 10px;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #ccc;
+    color: azure;
+    margin-top: 4px;
+    transition: transform 0.3s; /* Add a smooth transition for a better visual effect */
+}
+
+.SubmitButton:focus {
+    outline: none;
+}
+
+.SubmitButton:active {
+    animation: pulse 1s ease-out; /* Apply the pulse animation when the button is active (pressed) */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 175, 245, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px 10px rgba(0, 175, 245, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 175, 245, 0);
+    }
+}
+
+
+.InputYear {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .InputYear::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #555;
+  }
+  
+  /* Style for dropdown options */
+  .InputYear option {
+    background-color: #00AFF5;
+    color: #fff;
+  }
+
+

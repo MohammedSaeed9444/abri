@@ -14,15 +14,16 @@
   
   .Menu {
     position: absolute;
-    top: 60px; /* Adjust the top value as needed */
-    right: 0;
+    top: 64px; /* Adjust the top value as needed */
+    right: -38px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     min-width: 120px;
     z-index: 1;
+    box-shadow: 0 8px 16px rgba(0.1, 0.1, 0.1, 0.1)
   }
   
   .MenuList {
@@ -36,7 +37,11 @@
     text-align: center;
     border-bottom: 1px solid #ccc;
   }
-  
+
+  .MenuList li:hover {
+    background-color: #c0bdbd5b;
+  }
+
   .MenuList li:last-child {
     border-bottom: none;
   }
@@ -48,9 +53,9 @@
     transition: color 0.3s ease-in-out;
   }
   
-  .MenuList a:hover {
+  /* .MenuList a:hover {
     color: #007bff;
-  }
+  } */
   
   @media (max-width: 620px) {
     .Avatar {
@@ -59,7 +64,9 @@
     }
   
     .Menu {
-      top: 38px; /* Adjust the top value as needed */
+      top: 48px; /* Adjust the top value as needed */
+      left: 0;
+      right: 0;
     }
   }
   

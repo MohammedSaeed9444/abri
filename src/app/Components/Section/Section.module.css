@@ -37,6 +37,11 @@
     font-weight: bold;
 }
 
+.UlPapulerTrip a:hover {
+    color: azure;
+}
+
+
 
 @media (max-width: 620px) {
     .UlPapulerTrip {
