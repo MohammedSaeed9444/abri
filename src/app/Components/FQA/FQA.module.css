@@ -1,4 +1,6 @@
-
+.FQA {
+    padding-bottom: 42px;
+}
 
 .TitleFQA {
     padding-top: 48px;
@@ -24,4 +26,15 @@
 
 .ulFQA p{
     color: #6f8b90;
+}
+
+@media (max-width: 620px) {
+    .ulFQA {
+        display:block;
+    }
+    .ulFQA h4 {
+        padding-top: 12px;
+        padding-bottom: 6px;
+    }
+
 }

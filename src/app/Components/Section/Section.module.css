@@ -5,7 +5,9 @@
 
 .TitelSection {
     padding-bottom: 20px;
+    color: #ffffff;
 }
+
 
 
 .UlPapulerTrip {
@@ -15,7 +17,7 @@
 }
 
 .UlPapulerTrip li{
-    border-radius: 10px;
+    border-radius: 16px;
     height: 85px;
     background-color: #ffffff;
     list-style: none;
@@ -26,7 +28,7 @@
 }
 
 .UlPapulerTrip li:hover {
-    background-color: #8488883b;
+    background-color: #ccccccc7;
     transition: 0.3s;
 }
 
@@ -34,7 +36,6 @@
     text-decoration: none;
     font-size: large;
     color: #054652;
-    font-weight: bold;
 }
 
 .UlPapulerTrip a:hover {

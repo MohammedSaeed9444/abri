@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
+    padding-bottom: 24px;
 }
 
 .ArticalDiv {
@@ -46,6 +47,12 @@
 .LinkArtical:hover {
     color: #11779f93;
 }
+
+
+.ContainerImg {
+    height: 400px;
+}
+
 
 @media (max-width: 620px) {
 

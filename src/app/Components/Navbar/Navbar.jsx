@@ -2,7 +2,8 @@ import styles from './Navbar.module.css'
 import Logo from '../Logo/Logo'
 import NavList from '../navList/navList'
 import Avatar from '../Avatar/Avatar'
-
+import Link from 'next/link'
+import { SearchOutlined} from '@ant-design/icons'
 
 export default function Navbar() {
   return (
@@ -15,7 +16,7 @@ export default function Navbar() {
       <div className={styles.NavbarMobile}>
         <Avatar />
         <Logo />
-        <p>Se</p>
+        <Link href='/Search'><SearchOutlined /></Link>
       </div>
     </div>
   )

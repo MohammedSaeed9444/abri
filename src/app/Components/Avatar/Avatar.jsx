@@ -17,7 +17,7 @@ export default function Avatar() {
         <div className={styles.Menu}>
           <ul className={styles.MenuList}>
             <li><Link href={'/'}>Setting</Link></li>
-            <li><Link href={'/'}>Log in</Link></li>
+            <li><Link href='/Login'>Log in</Link></li>
             <li><Link href="/SignUp">Sing up</Link></li>
           </ul>
         </div>

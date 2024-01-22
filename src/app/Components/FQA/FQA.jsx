@@ -4,7 +4,7 @@ import Container from '../Container/Container'
 
 export default function FQA() {
   return (
-    <div>
+    <div className={styles.FQA}>
         <Container>
             <div className={styles.TitleFQA}>
                 <h1>FQA</h1>

@@ -1,0 +1,64 @@
+.Ims {
+
+    background-color: #00b0f552;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%230094d8' fill-opacity='0.27'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.27'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+    width: 100%;
+    height: 100vh;
+}
+
+.Form {
+    max-width: 480px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: px 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.Titel {
+    padding-top: 20px;
+    font-size: 36px;
+    color: #fffffff4;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.Input {
+    height: 32px;
+}
+
+.InputNum {
+    border: none;
+    outline: none;
+    font-size: large;
+    height: 38px;
+}
+
+.PublishButton {
+    font-size: 18px;
+    background-color: #00AFF5;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    height: 100%;
+    height: 38px;
+}
+
+
+.numberPassengersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 480px) {
+    .Titel {
+        font-size: 20px;
+      }
+
+}
