@@ -13,7 +13,7 @@ export default function FQA() {
                 <li>
                     <h4>How do I book a ride on Abri?</h4>
                     <div>
-                        <p>It's quick and easy to book a ride online! Simply tell us<br></br> your destination, which day you would like to travel and the number of passengers travelling. Click on Search to find the most convenient ride for you. Just like that you can book a ticket on Abri.</p>
+                        <p>Its quick and easy to book a ride online! Simply tell us<br></br> your destination, which day you would like to travel and the number of passengers travelling. Click on Search to find the most convenient ride for you. Just like that you can book a ticket on Abri.</p>
                     </div>
                 </li>
                 <li>

@@ -51,50 +51,42 @@ import styles from './page.module.css';
 import Container from '../Components/Container/Container';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
+import Image from 'next/image';
+import { useRouter } from "next/navigation";
+import { Ticket } from '@/Fake';
 
-export default function Ticket() {
-  const ticketData = {
-    TicketId: '1',
-    Date: '2024/02/13',
-    Leaving: { From: 'Basra', FromTime: '02:45' },
-    Going: { To: 'Baghdad', ToTime: '06:32' },
-    Price: '$13',
-    carType: 'BMW',
-    DriverID: '3',
-    DriverName: 'ali',
-  };
-
-  const { Date, Leaving, Going, Price, carType } = ticketData;
-
+export default function Tickets() {
   return (
     <div>
       <Navbar />
       <Container>
-        <div className={styles.Ticket}>
-          <div className={styles.Titel}>
-            <h2>{Date}</h2>
-          </div>
-          <div>
-            <div className={styles.From}>
-              <div className={styles.TimeFrom}>{Leaving.FromTime}</div>
-              <div className={styles.DesFrom}>{Leaving.From}</div>
+        {Ticket.map(ticket => (
+          <div key={ticket.TicketId} className={styles.Ticket}>
+            <div className={styles.Titel}>
+              <h2>{ticket.Date}</h2>
             </div>
-            <div className={styles.To}>
-              <div className={styles.TimeTo}>{Going.ToTime}</div>
-              <div className={styles.DesTo}>{Going.To}</div>
+            <div>
+              <div className={styles.From}>
+                <div className={styles.TimeFrom}>{ticket.Leaving.FromTime}</div>
+                <div className={styles.DesFrom}>{ticket.Leaving.From}</div>
+              </div>
+              <div className={styles.To}>
+                <div className={styles.TimeTo}>{ticket.Goning.ToTime}</div>
+                <div className={styles.DesTo}>{ticket.Goning.To}</div>
+              </div>
+              <div className={styles.ContPrice}>
+                <div className={styles.Npassenger}>price for 1 passenger</div>
+                <div className={styles.Price}>{ticket.Price}</div>
+              </div>
+              <div className={styles.typeCar}>{ticket.carType}</div>
             </div>
-            <div className={styles.ContPrice}>
-              <div className={styles.Npassenger}>price for 1 passenger</div>
-              <div className={styles.Price}>{Price}</div>
+            <div className={styles.ContBook}>
+              <button className={styles.BookButton}>Book</button>
             </div>
-            <div className={styles.typeCar}>{carType}</div>
           </div>
-          <div className={styles.ContBook}>
-            <button className={styles.BookButton}>Book</button>
-          </div>
-        </div>
+        ))}
         <div className={styles.coverImg}>
-          <img className={styles.img} src="/Passengers.svg" alt="Passengers" />
+          <Image className={styles.img} src="/Passengers.svg" alt="Passengers"  width={200} height={200}/>
         </div>
       </Container>
       <Footer />

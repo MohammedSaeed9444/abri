@@ -186,6 +186,10 @@ export default function SearchForm({
     onSearchFormChange({ target: { name, value } });
   };
 
+  const handleSearch = () => {
+    onSearch();
+  };
+
   return (
     <div className={styles.SearchForm}>
         <div>
@@ -262,7 +266,7 @@ export default function SearchForm({
           />
         </div>
 
-        <button className={styles.SearchButton} onClick={onSearch}>
+        <button className={styles.SearchButton} onClick={handleSearch}>
           Search
         </button>
     </div>

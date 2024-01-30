@@ -4,6 +4,10 @@ export const ticketsData = [
         Date : '2024/02/13',
         Leaving : {From : 'Baghadad', FromTime : '02:45'},
         Goning : {To : 'Mosal', ToTime : '06:32'},
+        Price : '$11',
+        carType : 'GMC',
+        DriverID : '3',
+        DriverName : 'mustafa',
         
     },
     {
@@ -11,28 +15,40 @@ export const ticketsData = [
         Date : '2024/02/13',
         Leaving : {From : 'Mosal', FromTime : '03:45'},
         Goning : {To : 'Baghadad', ToTime : '08:32'},
-        
+        Price : '$4',
+        carType : 'mazda',
+        DriverID : '3',
+        DriverName : 'amar',
     },
     {
         TicketId : '3',
         Date : '2024/02/13',
         Leaving : {From : 'Baghadad', FromTime : '12:45'},
         Goning : {To : 'Erbil', ToTime : '05:32'},
-        
+        Price : '$9',
+        carType : 'land',
+        DriverID : '3',
+        DriverName : 'sara',
     },
     {
         TicketId : '4',
         Date : '2024/02/13',
         Leaving : {From : 'Erbil', FromTime : '06:45'},
         Goning : {To : 'Baghadad', ToTime : '11:32'},
-        
+        Price : '$13',
+        carType : 'kia',
+        DriverID : '3',
+        DriverName : 'rami',
     },
     {
         TicketId : '5',
         Date : '2024/02/13',
         Leaving : {From : 'Baghadad', FromTime : '02:45'},
         Goning : {To : 'Basra', ToTime : '06:32'},
-        
+        Price : '$7',
+        carType : 'jeep',
+        DriverID : '3',
+        DriverName : 'omer',
     },
     {
         TicketId : '6',
@@ -40,6 +56,9 @@ export const ticketsData = [
         Leaving : {From : 'Basra', FromTime : '02:45'},
         Goning : {To : 'Baghadad', ToTime : '06:32'},
         Price : '$13',
+        carType : 'BMW',
+        DriverID : '3',
+        DriverName : 'ali',
         
     },
 
