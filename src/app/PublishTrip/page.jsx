@@ -102,6 +102,7 @@ import { DatePicker, Select } from 'antd';
 import moment from 'moment';
 import { UserOutlined } from '@ant-design/icons';
 import Footer from '../Components/Footer/Footer';
+import Image from 'next/image';
 
 const { Option } = Select;
 
@@ -145,6 +146,12 @@ export default function PublishTrip() {
 
       {/* Main content */}
       <div className={styles.Ims}>
+        <Image 
+          className={styles.ImPublish}
+          src="/Publish.webp"
+          alt="Carpool Image"
+          width={200}
+          height={200}></Image>
         <Container>
           <div className={styles.Titel}>
             <h1 className={styles.Titel}>

@@ -6,6 +6,11 @@
     height: 100vh;
 }
 
+.ImPublish {
+    width: 100%;
+    height: 100vh;
+}
+
 .Form {
     max-width: 480px;
     background-color: #FFFFFF;

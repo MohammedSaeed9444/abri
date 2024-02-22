@@ -2,6 +2,7 @@
 import styles from './Avatar.module.css';
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Avatar() {
 
@@ -11,7 +12,7 @@ export default function Avatar() {
   };
 
   return (
-    <div className={styles.Avatar} onClick={toggleMenu}>Ava
+    <div className={styles.Avatar} onClick={toggleMenu}><Image className={styles.avaImg} src={'/user.svg'} width={42} height={42}></Image>
     
     {isMenuOpen && (
         <div className={styles.Menu}>

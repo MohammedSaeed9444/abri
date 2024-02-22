@@ -3,13 +3,19 @@
 .Avatar {
     width: 48px;
     height: 48px;
-    background-color: bisque;
+    background-color: #c4c2c278;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     position: relative;
+   
+  }
+
+  .avaImg img {
+    object-fit:fill;
+    
   }
   
   .Menu {
@@ -35,7 +41,7 @@
   .MenuList li {
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #6bc9f4cb;
   }
 
   .MenuList li:hover {
@@ -67,6 +73,11 @@
       top: 48px; /* Adjust the top value as needed */
       left: 0;
       right: 0;
+    }
+
+    .avaImg {
+      width: 26px;
+      height: 26px;
     }
   }
   

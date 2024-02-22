@@ -7,6 +7,8 @@ import Link from 'next/link'
 import { ticketsData } from '@/Fake'
 
 export default function Tickets() {
+
+  
   return (
     <div>
       <Navbar />

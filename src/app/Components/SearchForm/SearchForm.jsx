@@ -171,23 +171,23 @@ import styles from './SearchForm.module.css';
 import { DatePicker, Select } from 'antd';
 import moment from 'moment';
 import { UserOutlined } from '@ant-design/icons';
+import { useAppStore } from '@/store';
 
 const { Option } = Select;
 
-export default function SearchForm({
-  leavingFrom,
-  goingTo,
-  searchDate,
-  numberPassengers,
-  onSearchFormChange,
-  onSearch,
-}) {
+export default function SearchForm({ onSearch }) {
+
+  const { leavingFrom, goingTo, searchDate, numberPassengers, setSearchInfo } = useAppStore();
+
   const handleSearchChange = (value, name) => {
-    onSearchFormChange({ target: { name, value } });
+    setSearchInfo({ [name]: value });
   };
 
   const handleSearch = () => {
-    onSearch();
+    // Call the onSearch function with the search information
+    if (onSearch) {
+      onSearch({ leavingFrom, goingTo, searchDate, numberPassengers });
+    }
   };
 
   return (
@@ -195,7 +195,7 @@ export default function SearchForm({
         <div>
           <Select
               className={styles.Input}
-              style={{ width: '100%',height: '100%', border: 'none', outline: 'none' }}
+              style={{ width: '100%',height: '100%', border: 'none',}}
               placeholder="Leaving from.."
               value={leavingFrom}
               onChange={(value) => handleSearchChange(value, 'leavingFrom')}

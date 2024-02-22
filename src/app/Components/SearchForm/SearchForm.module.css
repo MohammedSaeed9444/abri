@@ -93,4 +93,27 @@
         height: 32px;
     }
 
+
+
+
+}
+
+
+.Input {
+    border: none;
+    border-right: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.ant-select-selector {
+    border: none;
+    border-right: 1px solid #ccc;
+    border-radius: 0;
+
+}
+
+.ant-select-customize-input {
+    border: none;
+    border-right: 1px solid #ccc;
+    border-radius: 0;
 }

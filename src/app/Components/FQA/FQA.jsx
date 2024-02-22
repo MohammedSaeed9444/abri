@@ -10,7 +10,7 @@ export default function FQA() {
                 <h1>FQA</h1>
             </div>
             <ul className={styles.ulFQA}>
-                <li>
+                <li className={styles.liFQA}>
                     <h4>How do I book a ride on Abri?</h4>
                     <div>
                         <p>Its quick and easy to book a ride online! Simply tell us<br></br> your destination, which day you would like to travel and the number of passengers travelling. Click on Search to find the most convenient ride for you. Just like that you can book a ticket on Abri.</p>

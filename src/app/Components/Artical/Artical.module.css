@@ -2,8 +2,9 @@
     margin-top: 72px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
-    padding-bottom: 24px;
+    gap: 82px;
+    padding-top: 72px;
+    padding-bottom: 124px;
 }
 
 .ArticalDiv {
@@ -35,7 +36,9 @@
 }
 
 .PergraphArtical {
-    padding-top: 8px;
+    padding-top: 16px;
+    padding-bottom: 6px;
+
 }
 
 .LinkArtical {
@@ -57,12 +60,15 @@
 @media (max-width: 620px) {
 
     .Artical {
+        
         display: grid;
         grid-template-columns: 1fr;
+        gap: 72px;
     }
 
     .ContainerImg {
         height: auto;
     
     }
+
 }
